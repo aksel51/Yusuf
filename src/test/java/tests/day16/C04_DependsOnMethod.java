@@ -13,7 +13,7 @@ public class C04_DependsOnMethod extends TestBaseBeforeClassAfterClass {
     @Test
     public void test1() {
         // amazon ana sayfasına gidelim
-        driver.get("https://www.Wamazon1.com");
+        driver.get("https://www.Wamazon1.com");//
     }
     @Test (dependsOnMethods = "test1")
     public void test2() {
