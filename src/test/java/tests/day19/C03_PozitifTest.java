@@ -28,7 +28,7 @@ public class C03_PozitifTest {
                 .sendKeys(Keys.ENTER).perform();
         //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         Assert.assertTrue(hmcPage.girisYapildi.isDisplayed());
-        Driver.closeDriver();
+        Driver.closeDriver();///
 
     }
 }
