@@ -19,7 +19,7 @@ public class C03_PozitifTest {
         Page classımızdan bir obje oluşturarak, oluşturmuş olduğumuz obje ile
         page classımızdaki locate'lerimize ulaşabiliriz
          */
-        hmcPage.login.click();
+        hmcPage.login.click();//
         //test data username: manager ,
         //test data password : Manager1!
         hmcPage.userName.sendKeys(ConfigReader.getProperty("user"));
@@ -28,7 +28,7 @@ public class C03_PozitifTest {
                 .sendKeys(Keys.ENTER).perform();
         //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         Assert.assertTrue(hmcPage.girisYapildi.isDisplayed());
-        Driver.closeDriver();///
+        Driver.closeDriver();
 
     }
 }
